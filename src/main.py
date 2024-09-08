@@ -2,6 +2,7 @@
 from dotenv import load_dotenv
 import sys
 import os
+import argparse
 
 
 def init_project():
@@ -25,17 +26,12 @@ def init_project():
     parser.add_argument('--local', action='store_true', help='Run in local mode')
     args = parser.parse_args()
 
-    os.environ['LOCAL_MODE'] = args.local
+    os.environ['LOCAL_MODE'] = str(args.local)
 
 
 if __name__ == "__main__":
     init_project()
 
 # ============================ Business logic ==============================
-import argparse
-
-
 if __name__ == "__main__":
     print("Hello World")
-
-    
