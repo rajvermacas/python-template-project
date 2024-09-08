@@ -24,3 +24,8 @@ conda remove -n env-name --all
 ```bash
 conda env export > conda-env.yml
 ```
+
+# Acknowledgements
+- This project is only intended for educational purposes. 
+- We do not encourage or promote the use of this software in any illegal activities.
+- We do not take any responsibility for any misuse of this software.
